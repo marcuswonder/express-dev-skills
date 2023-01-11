@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
 </head>
-<body>
+
+<body style="font-family: Arial">
     <h1>Skills</h1>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
-          <%= s.skill %>
+            <a href="/skills/<%= s.skill %>">
+            <%= s.skill %>
+            </a>
             - 
-          <%= s.skill > 5 ? 'proficient' : 'not yet proficient' %>
+            <%= s.skill > 5 ? 'proficient' : 'not yet proficient' %>
         </li>
       <% }); %>
     </ul>

@@ -6,6 +6,6 @@ module.exports = {
 
 function index(req, res) {
     res.render('skills/index', {
-      todos: Skill.getAll()
+      skills: Skill.getAll()
     });
   }
