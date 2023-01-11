@@ -8,6 +8,7 @@ var skillsCtrl = require('../controllers/skills')
 // No need to include in paths again
 
 // GET /todos
-router.get('/', skillsCtrl.index);
+router.get('/', skillsCtrl.index)
+router.get('/:skill', skillsCtrl.show)
 
 module.exports = router;
