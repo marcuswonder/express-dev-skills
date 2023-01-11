@@ -14,5 +14,11 @@
         <li>Comfort /10: <%= skill.comfort%></li>
         <li>Confidence /10: <%= skill.confidence%></li>
     </ul>
+
+    <form action="/skills/<%= skill.skill %>?_method=DELETE"
+        class="delete-form" method="POST">
+        <button type="submit">Delete Skill</button>
+    </form>
+
 </body>
 </html>
