@@ -9,6 +9,10 @@ var skillsCtrl = require('../controllers/skills')
 
 // GET /todos
 router.get('/', skillsCtrl.index)
+router.get('/new', skillsCtrl.new)
 router.get('/:skill', skillsCtrl.show)
+router.post('/', skillsCtrl.create)
+
+
 
 module.exports = router;

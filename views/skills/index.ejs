@@ -9,6 +9,7 @@
 
 <body style="font-family: Arial">
     <h1>Skills</h1>
+    <h4>My skills:</h4>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
@@ -19,6 +20,8 @@
             <%= s.skill > 5 ? 'proficient' : 'not yet proficient' %>
         </li>
       <% }); %>
+      <br>
+      <a href="/skills/new">Add Skill</a>
     </ul>
   </body>
 </html>
